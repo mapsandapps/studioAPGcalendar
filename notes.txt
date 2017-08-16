@@ -1,0 +1,3 @@
+GET https://www.googleapis.com/calendar/v3/calendars/studioapg%40gmail.com/events?singleEvents=true&timeMax=2017-08-06T00%3A00%3A00-04%3A00&timeMin=2017-07-30T00%3A00%3A00-04%3A00&key={YOUR_API_KEY}
+
+https://www.one-tab.com/page/kkUmI1fJQbGZpswBjIsMMg
