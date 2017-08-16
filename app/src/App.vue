@@ -32,7 +32,6 @@ export default {
       if (isSignedIn) {
         document.getElementById('authorize-button').style.display = 'none'
         document.getElementById('signout-button').style.display = 'block'
-        this.listUpcomingEvents()
       } else {
         document.getElementById('authorize-button').style.display = 'block'
         document.getElementById('signout-button').style.display = 'none'
@@ -43,22 +42,6 @@ export default {
     },
     handleSignoutClick(event) {
       gapi.auth2.getAuthInstance().signOut()
-    },
-    listUpcomingEvents() {
-      gapi.client.calendar.events.list({
-        calendarId: 'studioapg@gmail.com',
-        timeMin: (new Date()).toISOString(),
-        showDeleted: false,
-        singleEvents: true,
-        orderBy: 'startTime'
-      }).then(resp => {
-        var events = resp.result.items
-        if (events.length > 0) {
-          this.events = events // TODO: instead of this, reformat it so these are by organizer
-        } else {
-          console.log('no events loaded')
-        }
-      })
     }
   },
   mounted() {
