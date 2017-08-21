@@ -28,7 +28,7 @@
       <q-list-header>Menu</q-list-header>
       <q-side-link
         item
-        to="/home">
+        to="/">
         <q-item-side icon="home" />
         <q-item-main label="Home" />
       </q-side-link>

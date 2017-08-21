@@ -40,6 +40,7 @@ import uniqWith from 'lodash/uniqWith'
 import moment from 'moment'
 
 import {
+  Toast,
   QBtn,
   QList,
   QListHeader,
@@ -114,6 +115,12 @@ export default {
           this.processEvents(events)
         } else {
           console.log('no events loaded')
+        }
+      }, reason => {
+        if (reason.status === 403) {
+          Toast.create.negative('Error 403: Try logging in.')
+        } else {
+          Toast.create.negative(`Reason: ${reason.status}: ${reason.result.error.message}`)
         }
       })
     },

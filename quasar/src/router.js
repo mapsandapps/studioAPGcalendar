@@ -27,7 +27,7 @@ export default new VueRouter({
       component: load('Index'),
       children: [
         {
-          path: '/home',
+          path: '/',
           component: load('Home')
         },
         {
