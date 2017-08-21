@@ -1,0 +1,1 @@
+webpackJsonp([3],{218:function(t,e){},219:function(t,e){t.exports={render:function(){var t=this,e=t.$createElement;return(t._self._c||e)("div",{staticClass:"layout-padding justify-center"},[t._v("Click the menu in the top left to get started!")])},staticRenderFns:[]}},23:function(t,e,n){var r=n(1)(n(218),n(219),null,null,null);t.exports=r.exports}});
