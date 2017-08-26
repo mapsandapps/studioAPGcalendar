@@ -40,9 +40,9 @@
       </q-side-link>
       <q-side-link
         item
-        to="/deleted">
-        <q-item-side icon="remove_red_eye" />
-        <q-item-main label="Deleted Events" />
+        to="/missing-studio">
+        <q-item-side icon="label" />
+        <q-item-main label="Missing Studio Label" />
       </q-side-link>
     </q-scroll-area>
 

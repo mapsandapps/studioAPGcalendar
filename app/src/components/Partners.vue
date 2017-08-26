@@ -52,7 +52,6 @@ export default {
       var eventCreators = map(events, 'creator')
       // find the unique creators
       this.partners = uniqWith(eventCreators, isEqual)
-      console.log(this.partners)
       // add all their events as an object
       for (var event of events) {
         event.duration = this.calculateDuration(event.start.dateTime, event.end.dateTime)
@@ -65,8 +64,6 @@ export default {
           }
         }
       }
-      console.log(this.partners)
-
     },
     listUpcomingEvents(day) {
       var timeMin = this.sundays[day].apiFormat

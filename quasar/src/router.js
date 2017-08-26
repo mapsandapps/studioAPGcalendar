@@ -35,8 +35,8 @@ export default new VueRouter({
           component: load('WeeklyAllocation')
         },
         {
-          path: '/deleted',
-          component: load('Deleted')
+          path: '/missing-studio',
+          component: load('MissingStudio')
         }
       ]
     },

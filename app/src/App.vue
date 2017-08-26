@@ -44,7 +44,7 @@ export default {
       gapi.auth2.getAuthInstance().signOut()
     }
   },
-  mounted() {
+  beforeCreate() {
     gapi.load('client:auth2', this.initClient)
   }
 }
