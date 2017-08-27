@@ -28,12 +28,6 @@
       <q-list-header>Menu</q-list-header>
       <q-side-link
         item
-        to="/">
-        <q-item-side icon="home" />
-        <q-item-main label="Home" />
-      </q-side-link>
-      <q-side-link
-        item
         to="/weekly-allocation">
         <q-item-side icon="playlist_add" />
         <q-item-main label="Weekly Allocation" />
@@ -43,6 +37,12 @@
         to="/missing-studio">
         <q-item-side icon="label" />
         <q-item-main label="Missing Studio Label" />
+      </q-side-link>
+      <q-side-link
+        item
+        to="/manage-calendar">
+        <q-item-side icon="people" />
+        <q-item-main label="Manage Calendar" />
       </q-side-link>
     </q-scroll-area>
 

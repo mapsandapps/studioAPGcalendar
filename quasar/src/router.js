@@ -37,6 +37,10 @@ export default new VueRouter({
         {
           path: '/missing-studio',
           component: load('MissingStudio')
+        },
+        {
+          path: '/manage-calendar',
+          component: load('ManageCalendar')
         }
       ]
     },
